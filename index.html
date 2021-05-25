@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <section id="container">
+
+        <header class="header">
+            <h1 id="title">COVID-19 Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help us to fight with corona virus.</em></p>
+        </header>
+        <form action="#" method="post" id="survey-form">
+            <div class="form-group">
+
+                <label for="name-label" id="name-label">Name</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label for="email=label" id="email-label">Email </label><br>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="phone">Phone number </label> <br>
+
+                <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}"
+                    required placeholder="Enter mobile number">
+            </div>
+
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label> <br>
+                <input type="number" name="number" class="form-control" id="number" min="1" max="110" placeholder="Age"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="dropdown"> State </label> <br>
+                <select name="states" class="form-control" id="dropdown">
+                    <option value="" disabled selected hidden>Select State...</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label> <br>
+                <input type="radio" name="gender" value="male">Male <br>
+                <input type="radio" name="gender" value="female">Female <br>
+                <input type="radio" name="gender" value="Other">Ohter <br>
+            </div>
+            <br>
+            <div class="form-group">
+                <p>How many senior citizens do you have at home?</p>
+                <select name="states" id="senior-citizen" class="form-control">
+                    <option value="" disabled selected hidden>Choose option...</option>
+                    <option value="zero">Zero</option>
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three or more</option>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+
+                <p>Do you experience any of the below symptoms?</p>
+                <input type="checkbox" name="symstoms" value="cold">Cold <br>
+                <input type="checkbox" name="symstoms" value="fever">Fever <br>
+                <input type="checkbox" name="symstoms" value="cough">Cough <br>
+                <input type="checkbox" name="symstoms" value="shortness of breath">Shortness of breath <br>
+                <input type="checkbox" name="symstoms" value="headache">Headache <br>
+                <input type="checkbox" name="symstoms" value="muscle pain">Muscle pain <br>
+                <input type="checkbox" name="symstoms" value="soar throat">Soar throat <br>
+                <input type="checkbox" name="symstoms" value="diarrhea">Diarrhea <br>
+                <input type="checkbox" name="symstoms" value="olfactory disorders">Olfactory Disorders <br>
+                <input type="checkbox" name="symstoms" value="taste disorders">Taste disorders <br>
+                <input type="checkbox" name="symstoms" value="exhastion">Exhastion <br>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <p>If you have any additional information share with us -
+                </p> <br>
+                <textarea name="additional-info" class="form-control" id="input-textarea" cols="30"
+                    rows="10"></textarea>
+                <br>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

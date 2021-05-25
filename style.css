@@ -1,0 +1,109 @@
+
+:root{
+    --black:#000;
+    --black-alpha:#0f0c0ccc;
+    --white:#fff;
+    --green:#16b308;
+    --green-alpha:#1dff1d;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-family: 'Poppins', sans-serif;
+font-size: 1rrem;
+font-weight: 400;
+line-height: 1.4;
+ }
+
+#container{
+    
+    display: flex;
+    flex-direction: column;
+   
+    align-content: center;
+    align-items: center;
+    margin: auto;
+  
+    max-width: 72.5rem;
+    line-height: 1.4rem;
+    background-image: 
+    url(doctor-man.svg),
+    url(doctor-woman.svg);
+  background-position:
+    center right, /* this positions the first image */
+    center left; /* this positions the second image */
+  background-repeat:
+    no-repeat; /* this applies to both images */
+  
+}
+
+.header{
+    text-align: center;
+    background-color:var(--black);
+    color: white;
+    padding: 1rem 1.8rem;
+    line-height: normal;
+    
+  
+    
+   
+}
+
+#survey-form{  
+    background-color:  var(--black-alpha);
+}
+.form-group{
+    margin: 1rem 3rem;
+    font-size: 1.13rem;
+    font-weight: 400;
+    color:white;
+    
+
+}
+.form-control{
+    width: 100%;
+    padding: 0.4rem 0rem;
+    font-size: 1rem;
+}
+
+#input-textarea{
+    resize: vertical;
+}
+
+#submit{
+    background-color:var(--green);
+    border: none;
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 0.1rem;
+}
+#submit:hover{
+    background-color: var(--green-alpha);
+    box-shadow: 1px 1px 0px var(--green);
+    transition-duration: 200ms;
+    
+}
+
+
+
+@media (max-width:500px){
+
+    #container{
+        background-image: 
+      
+        url(doctor-woman.svg);
+      background-position:
+        
+        center left; /* this positions the second image */
+      background-repeat:
+        no-repeat; /* this applies to both images */
+    }
+
+}
